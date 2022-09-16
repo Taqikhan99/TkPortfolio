@@ -1,0 +1,49 @@
+nav{
+    width: fit-content;
+    height: 3rem;
+    padding: 2rem 1rem;
+    background-color: rgb(9, 12, 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+   
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;    
+    transform: translateX(-50%);
+    z-index: 99;
+}
+
+nav a{
+    background: transparent;
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--color-primary);
+    transition: all ease-in 0.6s;
+}
+
+/* nav a:hover{
+    background-color: rgb(162, 248, 142);
+    color: black;
+} */
+
+nav a.active{
+    background-color: var(--color-primary);
+    color: black;
+}
+@media screen and (max-width:600px){
+    .mynav>a{
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+    .mynav{
+        width: 94%;
+        
+    }
+}
